@@ -8,8 +8,8 @@ string encrypt(string text, int s)
     {
         if (isupper(text[i]))
             result += char(int(text[i]+s-65)%26 +65);
-    else
-        result += char(int(text[i]+s-97)%26 +97);
+        else
+            result += char(int(text[i]+s-97)%26 +97);
     }
     return result;
 }
